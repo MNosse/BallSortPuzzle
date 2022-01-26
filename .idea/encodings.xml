@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/biblioteca/busca/AEstrela.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/biblioteca/busca/Aleatorio.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/biblioteca/busca/Antecessor.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/biblioteca/busca/BuscaBidirecional.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/biblioteca/busca/BuscaHeuristica.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/biblioteca/busca/BuscaLargura.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/biblioteca/busca/BuscaProfundidade.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/biblioteca/busca/BuscaRecursiva.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/biblioteca/busca/Heuristica.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/biblioteca/busca/MostraStatusConsole.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/biblioteca/busca/Nodo.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/biblioteca/busca/SubidaMontanha.java" charset="windows-1252" />
+  </component>
+</project>
