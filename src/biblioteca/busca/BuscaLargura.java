@@ -22,10 +22,10 @@ public class BuscaLargura<E extends Estado> extends Busca<E> {
         super(ms);
     }
 
-    public Nodo busca(E inicial) {
+    public Nodo busca(E inicial) throws Exception {
         status.inicia();
         initFechados();
-       
+
         Queue<Nodo> abertos = new PriorityQueue<Nodo>();
 
         abertos.add(new Nodo(inicial, null));
@@ -40,27 +40,11 @@ public class BuscaLargura<E extends Estado> extends Busca<E> {
                 return n;
             }
             abertos.addAll(sucessores(n));
-//            Queue<Nodo> sucessores = new PriorityQueue<>();
-//            sucessores.addAll(sucessores(n));
-//            for (int i = 0; i < sucessores.size(); i++){
-//                abertos.add(sucessores.remove());
-//            }
-//            ArrayList<Nodo> sucessores = new ArrayList<>();
-//            sucessores.addAll(sucessores(n));
-//            for (int i = 0; i < sucessores.size(); i++){
-//                abertos.add(sucessores.get(i));
-//            }
-//            Queue<Nodo> sucessores = new PriorityQueue<>();
-//            sucessores.addAll(sucessores(n));
-//            while (sucessores.size() > 0){
-//                abertos.add(sucessores.remove());
-//            }
-//            System.out.println(abertos.size());
         }
         status.termina(false);
         return null;
     }
-    
+
     public String toString() {
     	return "BL - Busca em Largura";
     }

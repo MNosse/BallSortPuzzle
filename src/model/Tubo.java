@@ -86,24 +86,6 @@ public class Tubo {
         }
     }
 
-    public Tubo copiarRemovendoBola() {
-
-        Tubo copia = this.copiar();
-
-        copia.getTubo().pop();
-
-        return copia;
-    }
-
-    public Tubo copiarInserindoBola(Bola novaBola) {
-        Tubo copia = this.copiar();
-
-        copia.getTubo().push(novaBola);
-
-        return copia;
-    }
-
-
     public Tubo copiar() {
         if (tuboVazio()){
             return new Tubo();
@@ -136,6 +118,9 @@ public class Tubo {
         boolean resposta = true;
         int tamanho = conteudoTubo().size();
         Tubo outro = (Tubo)obj;
+        if (tubo.size() != outro.tubo.size()){
+            return false;
+        }
         for (int i = 0; i < tamanho; i++){
             if (this.conteudoTubo().get(i).getCor().equals(outro.conteudoTubo().get(i).getCor())){
                 resposta = true;
